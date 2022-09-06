@@ -1,0 +1,1216 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+     font-size: 100%;
+     font-family: "Righteous", "Nanum Myeongjo", "Sans-Serif", serif;
+     overflow-x: hidden;
+}
+h1 {
+     font-size: 10rem;
+     margin: 0.2em 0 0 0;
+}
+
+h2 {
+     color: red;
+     font-size: 3rem;
+     font-weight: 500;
+     margin: 1.5vh auto;
+}
+
+h3 {
+     color: red;
+     font-size: 2.5rem;
+     margin: 2vh auto;
+     text-align: center;
+}
+
+h4 {
+     color: gray;
+     font-size: 2rem;
+     margin-bottom: 1vh;
+}
+
+p {
+     font-size: 1rem;
+     letter-spacing: .08rem;
+     font-weight: 400;
+}
+
+a {
+     text-decoration: none;
+}
+
+img {
+     max-width: 100%;
+}
+
+.logo {
+     width: 2rem;
+     margin-left: .5rem;
+}
+
+.fadeStyle {
+     background: rgba(0, 0, 0, .5);
+     color: white;
+     padding: 10px 10px;
+}
+
+.team,
+.experiences {
+     background: rgb(245,249,252);
+}
+
+.hidden {
+     display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+     h2 {
+          font-size: 2rem
+     }
+     h3 {
+          font-size: 1.75rem;
+     }
+}
+
+@media screen and (min-width: 375px) and (max-width: 800px) {
+     
+}
+
+footer {
+     background: black;
+     color: white;
+}
+
+/******************************************
+/* Features
+/*******************************************/
+.btn {
+     width: 4vw;
+     height: 4vh;
+     background:rgba(0, 0, 0, .5);
+     color: white;
+     text-align: center;
+     line-height:2.5rem;
+     border-radius: 10px;
+}
+
+.btn2 {
+     width: 40vw;
+     max-width: 200px;
+     height: 40px;
+     margin: 2vh 0;
+     background:rgba(0, 0, 0, 1);
+     color: white;
+     text-align: center;
+     font-size: 1rem;
+     line-height: 2.5rem;
+     border-radius: 10px;
+}
+
+.btn2:hover {
+     color: red; 
+}
+
+
+
+.btn.span {
+     line-height: inherit;
+     font-size: .5rem;
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+     .btn2 {
+          width: 40vw;
+          max-width: 200px;
+     }
+}
+
+@media screen and (min-width: 375px) and (max-width: 800px) {
+     
+}
+/******************************************
+/* Colors
+/*******************************************/
+h1,
+main h2 {
+     color: red;
+}
+
+.horizontal span,
+.promotion div {
+     color: white;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+html,
+body {
+     width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background: white;
+}
+/* Group Styles */
+.container {
+     width: 70vw;
+     margin: 0 auto;
+}
+
+ul,
+li,
+.team div {
+     display: inline-block;
+}
+
+/* Header */
+header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 60px;
+     margin: 0 auto;
+     line-height: 2rem;
+     font-size: 1rem;
+}
+     #navMenu {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+     }
+
+     header nav div:first-of-type {
+          width: 100%;
+          text-align: left;
+          margin-left: 2%;
+     }
+
+     header nav div:nth-of-type(2) {
+          width: 100%;
+          text-align: right;
+          margin-right: 2%;
+     }
+
+          .iconContainer {
+               align-items: center;
+          }  
+
+          header nav ul {
+               margin: 1vh 10vw;
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+          }
+               header ul li {
+                    margin: 0 1.25vw;
+                    line-height: 2rem;  
+               }
+               
+               header ul li:hover {
+                    border-bottom: solid 3px red;
+               }
+          
+          
+          
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+     header {
+          width: 100%;
+          height: 40px;
+          margin: 0 auto;
+          line-height: 2rem;
+          font-size: 1rem;
+     }
+          #navMenu {
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+          }
+     
+          header nav div:first-of-type {
+               width: 100%;
+               text-align: left;
+               margin-left: 2rem;
+          }
+     
+          header nav div:nth-of-type(2) {
+               width: 100%;
+               text-align: right;
+               margin-right: 2rem;
+          }
+     
+               .icon {
+                    width: 10%;
+               }   
+     
+               header nav ul {
+                    display: none;
+               }
+
+               .tickets {
+                    display: none;
+               }
+                    
+}
+
+@media screen and (min-width: 375px) and (max-width:800px) {
+     header {
+          width: 100%;
+          height: 40px;
+          margin: 0 auto;
+          line-height: 2rem;
+          font-size: 1rem;
+     }
+          #navMenu {
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+          }
+     
+          header nav div:first-of-type {
+               width: 100%;
+               text-align: left;
+               margin-left: 2rem;
+          }
+     
+          header nav div:nth-of-type(2) {
+               width: 100%;
+               text-align: right;
+               margin-right: 2rem;
+          }
+     
+               .icon {
+                    width: 10%;
+                    max-width: 20px;
+               }   
+     
+               header nav ul {
+                    display: none;
+               }
+
+               .tickets {
+                    display: none;
+               }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1180px) {
+     .icon {
+          display: none;
+     }
+}
+
+@media screen and (min-width: 1181px) {
+     .icon {
+          display: none;
+     }
+}
+
+/* Main */
+main {
+     width: 100%;
+     height: 110vh;
+     background-color: rgba(0, 0, 0, 0);
+     background-image: linear-gradient(-45deg, rgba(0,0,0, 0.1),rgba(0,0,0,0.8)), url(../main.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     padding-left: 10%;
+}
+
+.clickMenu {
+     width: 100%;
+     display: flex;
+     color: white;
+     position: fixed;
+     flex-direction: column;
+     flex-wrap: wrap;
+     background:rgba(255, 0, 0, 0.75);
+     z-index: 99;
+}
+
+.clickMenu li {
+     display: block;
+     margin: .25vh 30%;
+     
+}
+
+.mainTop {
+     width: 93vw;
+}
+     .mainTop h2 {
+          font-size: 5rem;
+     }
+     .mainTop span {
+          display: block;
+          margin-bottom: 40px;
+          font-size: 3rem;
+     }
+
+.mainBottom {
+     width: 100%;
+     height: 400px;
+}
+
+.horizontal,
+.promotion {
+     width: 90%;
+     float: left;
+     margin-top: 50px;
+}
+.vertical {
+     width: 5%;     
+     writing-mode: vertical-rl;
+     text-orientation: mixed;
+     padding-top: 160px;
+}
+
+.arrowLinks {
+     width: 10%;
+     float: right;
+}
+
+.arrowLinks {
+     width: 100px;
+}
+.arrowLinks img {
+     width: 40px;
+     display: inline-block;
+}
+
+.mainTop a {
+     padding: 10px 15px;
+}
+
+
+.promotion div {
+     width: 260px;
+     height: 300px;
+     padding-top: 30px;
+}
+
+.promotion div > span:first-of-type,
+.promotion div section,
+.promotion div p,
+.promotion div a {
+     padding-left: 30px;
+}
+
+.promotion div > span:first-of-type,
+.promotion div section,
+.promotion div p,
+.promotion div a {
+     margin-bottom: 30px;
+}
+
+.promotion div section + span {
+     border-left: solid 5px white;
+}
+
+.promotion section span:first-child {
+     font-weight: 900;
+     font-size: 2rem;
+}
+
+.promotion div span:nth-child(2) {
+     padding-left: none;
+}
+
+.promotion div a {
+     padding: 10px 10px;
+     margin-left: 30px;
+     text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+     main {
+          width: 100%;
+          height: 60vh;
+          background-color: rgba(0, 0, 0, 0);
+          background-image: linear-gradient(-45deg, rgba(0,0,0, 0.1),rgba(0,0,0,0.8)), url(../main.jpg);
+          background-size: cover;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          padding-left: 10%;
+     }
+     
+     .mainTop {
+          width: 93vw;
+     }
+          .mainTop h1 {
+               font-size: 3.75rem;
+          }
+
+          .mainTop h2 {
+               font-size: 2rem;
+          }
+          .mainTop span {
+               display: block;
+               margin-bottom: 40px;
+               font-size: 2rem;
+          }
+     
+     .mainBottom {
+          width: 100%;
+          height: 400px;
+     }
+     
+     .horizontal,
+     .promotion {
+          width: 90%;
+          float: left;
+          margin-top: 50px;
+     }
+     .vertical {
+          width: 5%;     
+          writing-mode: vertical-rl;
+          text-orientation: mixed;
+          padding-top: 160px;
+     }
+     
+     .arrowLinks {
+          width: 10%;
+          float: right;
+     }
+     
+     .arrowLinks {
+          width: 100px;
+     }
+     .arrowLinks img {
+          width: 40px;
+          display: inline-block;
+     }
+     
+     .mainTop a {
+          padding: 10px 15px;
+     }
+     
+     
+     .promotion div {
+          width: 260px;
+          height: 300px;
+          padding-top: 30px;
+     }
+     
+     .promotion div > span:first-of-type,
+     .promotion div section,
+     .promotion div p,
+     .promotion div a {
+          padding-left: 30px;
+     }
+     
+     .promotion div > span:first-of-type,
+     .promotion div section,
+     .promotion div p,
+     .promotion div a {
+          margin-bottom: 30px;
+     }
+     
+     .promotion div section + span {
+          border-left: solid 5px white;
+     }
+     
+     .promotion section span:first-child {
+          font-weight: 900;
+          font-size: 2rem;
+     }
+     
+     .promotion div span:nth-child(2) {
+          padding-left: none;
+     }
+     
+     .promotion div a {
+          padding: 10px 10px;
+          margin-left: 30px;
+          text-align: center;
+     }
+}
+/* Next Race */
+.nextRace {
+     background-image: linear-gradient(to right, gray , black);
+}
+
+.nextRace section {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     background: rgba(0, 0, 0, 0);
+}
+
+.nextRace div {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 2vh 0;
+}
+     .nextRaceLeft {
+          background-image: linear-gradient(-45deg, rgba(0,0,0, 0.1),rgba(0,0,0,0.8)), url(../nextRace2.jpg);
+          background-size: cover;
+          border-radius: 10px;
+     }
+          .nextRaceLeft div.div {
+               background: rgba(0, 0, 0, 0);
+          }
+
+          .nextRace img {
+               width: 100%;
+          }
+
+     .nextRaceRight {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+     }
+
+          .nextRaceRight section {
+               width: 25vw;
+               height: 10vh;
+               border-radius: 10px;
+               color: white;
+          }
+
+          .nextRaceRight p {
+               width: 85%;
+          }
+
+          table {
+               width: 100%;
+          }
+          table, th, td {
+               text-align: center;
+             }
+
+          th {
+               font-size: 1.25rem;
+               width: 30%;
+          }
+
+          td {
+               font-size: .8rem;
+               width: 30%;
+               padding-top: .4rem;
+          }
+          
+          div .bubble  {
+               margin: .25vh auto;
+          }
+
+     @media screen and (min-width: 320px) and (max-width: 374px) {
+          
+     }
+
+     @media screen and (min-width: 320px) and (max-width: 374px) {
+          .container {
+               width: 95%;
+          }
+          
+          .nextRace section {
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          }
+     
+          .nextRace div {
+               width: 100%;
+          }
+
+          .nextRaceRight section {
+               width: 70vw;
+               height: 10vh;
+               font-size: .8rem;
+               margin: 1vh 0;
+          }
+          .nextRaceRight .bubble {
+               
+               width: 100%;
+               height: 15vh;
+               margin: 1vh;
+          }
+
+          .nextRaceRight .bubble p,
+          .nextRaceRight .bubble li {
+               font-size: 1rem;
+          }  
+               
+}
+
+@media screen and (min-width: 375px) and (max-width: 800px) {
+
+     .container {
+          width: 95%;
+     }
+     
+     .nextRace section {
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     }
+
+     .nextRace div {
+          width: 100%;
+     }
+
+     .nextRaceLeft {
+          background-image: linear-gradient(-45deg, rgba(0,0,0, 0.1),rgba(0,0,0,0.8)), url(../nextRace2.jpg);
+          background-size: cover;
+          border-radius: 10px;
+     }
+          
+          .nextRaceLeft div.div {
+               background: rgba(0, 0, 0, 0);
+          }
+
+
+          .nextRace img {
+               width: 100%;
+          }
+
+
+     .nextRaceRight section {
+          width: 70vw;
+          height: 10vh;
+          font-size: 1rem;
+          margin: 1vh 0;
+     }
+     .nextRaceRight .bubble {
+          width: 100%;
+          height: 15vh;
+          margin: 2vh;
+          text-align: center;
+     }   
+}
+
+@media screen and (min-width: 801px) and (max-width: 1180px) {
+     
+     .nextRace section {
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     }
+
+     .nextRace div {
+          width: 100%;
+     }
+
+     .nextRaceLeft {
+          background-image: linear-gradient(-45deg, rgba(0,0,0, 0.1),rgba(0,0,0,0.8)), url(../nextRace2.jpg);
+          background-size: cover;
+          border-radius: 10px;
+     }
+          .nextRaceLeft div.div {
+               background: rgba(0, 0, 0, 0);
+          }
+
+          .nextRace img {
+               width: 100%;
+          }
+
+     .nextRaceRight section {
+          width: 70vw;
+          height: 10vh;
+          font-size: 1rem;
+          margin: 1vh 0;
+     }
+     .nextRaceRight .bubble {
+          flex-direction: column;
+          width: 100%;
+          height: 15vh;
+          margin: 2vh;
+          text-align: center;
+     }   
+}
+
+@media screen and (min-width: 1181px) {
+
+     .container {
+          width: 95%;
+     }
+     
+     .nextRace section {
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     }
+
+     .nextRace div {
+          width: 100%;
+     }
+
+     .nextRaceLeft {
+          border: 2px;
+     }
+
+     .nextRaceRight section {
+          width: 70vw;
+          height: 10vh;
+          font-size: 1rem;
+          margin: 1vh 0;
+     }
+     .nextRaceRight .bubble {
+          width: 100%;
+          height: 15vh;
+          margin: 2vh;
+          text-align: center;
+     } 
+     
+      .nextRace section {
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     }
+
+     .nextRace div {
+          width: 100%;
+     }
+
+     .nextRaceLeft {
+          background-image: linear-gradient(-45deg, rgba(0,0,0, 0.1),rgba(0,0,0,0.8)), url(../nextRace2.jpg);
+          background-size: cover;
+          border-radius: 10px;
+     }
+          .nextRaceLeft div.div {
+               background: rgba(0, 0, 0, 0);
+          }
+
+          .nextRace img {
+               width: 100%;
+          }
+
+     .nextRaceRight section {
+          width: 70vw;
+          height: 10vh;
+          font-size: 1rem;
+          margin: 1vh 0;
+     }
+     .nextRaceRight .bubble {
+          flex-direction: column;
+          width: 100%;
+          height: 15vh;
+          margin: 2vh;
+          text-align: center;
+     }   
+}
+
+/* Team */
+.team {
+     width: 100%;
+     text-align: center;
+     background: white;
+}
+
+.team section{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.team img {
+     width: 12vw;
+}
+
+.team div {
+     width: 20vw;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: relative;
+     margin: 5vh 0;
+}
+
+.team div section {
+     width: 12vw;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background: black;
+     color: white;
+}
+
+.team div section span {
+     display: block;
+     text-align: center;
+}
+
+.team div section > span {
+     font-weight: 700;
+     font-size: .8rem;
+     line-height: 1.6rem;
+}
+
+.team div section span + span {
+     font-size: .6rem;
+     font-weight: 200;
+     line-height: 1.2rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+     .team section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+     }
+     
+     .team img {
+          width: 100%;
+     }
+     
+     .team div {
+          width: 95%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          margin: 5vh 0;
+     }
+     
+     .team div section {
+          width: inherit;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background: black;
+          color: white;
+     }
+     
+     .team div section span {
+          display: block;
+          text-align: center;
+     }
+     
+     .team div section > span {
+          font-weight: 700;
+          font-size: .8rem;
+          line-height: 1.6rem;
+     }
+     
+     .team div section span + span {
+          font-size: .6rem;
+          font-weight: 200;
+          line-height: 1.2rem;
+     } 
+}
+
+@media screen and (min-width: 375px) and (max-width: 800px) {
+     .team section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+     }
+     
+     .team img {
+          width: 100%;
+     }
+     
+     .team div {
+          width: 95%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          margin: 5vh 0;
+     }
+     
+     .team div section {
+          width: inherit;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background: black;
+          color: white;
+     }
+     
+     .team div section span {
+          display: block;
+          text-align: center;
+     }
+     
+     .team div section > span {
+          font-weight: 700;
+          font-size: .8rem;
+          line-height: 1.6rem;
+     }
+     
+     .team div section span + span {
+          font-size: .6rem;
+          font-weight: 200;
+          line-height: 1.2rem;
+     } 
+}
+     
+
+@media screen and (min-width: 801px) and (max-width: 1180px) {
+     .team {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .team .container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+     }
+     
+          .team h2 {
+               display: block;
+          }
+
+          .team div section {
+               width: 100%;
+          }
+
+          .team img {
+               width: 100%;
+          } 
+}
+
+@media screen and (min-width: 1181px) {
+     .team {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .team .container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+     }
+     
+          .team h2 {
+               display: block;
+          }
+
+          .team div section {
+               width: 100%;
+          }
+
+          .team img {
+               width: 100%;
+          } 
+}
+     
+
+/* Experiences */
+#experiences {
+     width: 100%;
+     background-image: linear-gradient(-45deg, rgba(0,0,0, 0.1),rgba(0,0,0,0.8)), url(../ragingBull.jpg);
+     background-attachment: fixed;
+     background-size: cover;
+     background-repeat: no-repeat;
+     color: white;
+     display: flex;
+}
+
+.experiences .container div:first-of-type {
+     padding-top: 60px;
+}
+
+.experiences .container div {
+     padding-top: 20px;
+}
+
+.experiences .div2 span,
+.experiences .div3 span {
+     font-size: 1.9rem;
+     font-weight: 300;
+}
+
+.experiences .div2 span:first-child {
+     font-size: 2.3rem;
+     font-weight: 900;
+}
+
+.experiences a {
+     font-size: .6rem;
+     padding: 15px 30px;
+}
+
+#exclusive, 
+#training {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     flex-wrap: wrap;
+     width: 85%;
+     margin: 0 auto;
+}
+
+.exp {
+     margin-bottom: 2vh;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.exp div + div {
+     display: flexbox;
+     flex-direction: column;
+     align-items: center;
+}
+
+.description {
+     width: 80%;
+}
+
+@media screen and (min-width: 375px) and (max-width: 800px) {     
+     .oneThird {
+          width: 33.3%;
+          overflow: hidden;
+     }
+     
+     .forty {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+     }
+     
+     .description {
+          width: 80%;
+     }
+     
+     
+     .twoThirds {
+          width: 66.6%;
+          overflow: hidden;
+     }
+}
+
+@media screen and (min-width: 801px) {
+     .exp p {
+          width: 60%;
+     }
+}
+
+/* Footer */
+footer {
+     display: flex;
+     flex-direction: column;
+     padding: 5% 10%;
+     background: white;
+     color: black;
+}
+
+footer a {
+     text-decoration: none;
+     color: black;
+}
+
+#links {
+     width: 100%;
+     display: flex;
+     padding-bottom: 2.5%;
+     justify-content: space-between;
+}    
+
+     #links div {
+          width: 50%;
+     }
+     #links li {
+          display: block;
+     }
+
+#social {
+     width: 50%;
+     display: flex;
+     justify-content: flex-end;
+}
+
+#copyright {
+     width: 100%;
+     padding-top: 2.5%;
+     border-top: solid 2px red;
+}
+
+/* Effects */
+.rotate {
+     animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+     from {
+          transform: rotateY(0deg);
+     }
+     to {
+          transform: rotateY(359deg);
+     }
+}
